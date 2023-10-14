@@ -1,0 +1,72 @@
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --image-border-radius: 50%;
+    --image-width: 150px;
+    --image-height: 150px;
+    --margin: 10px;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    /* 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    */
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    /* Ajusta el tamaño del logo según tus necesidades */
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
+}
+
+.team-member img {
+    width: var(--image-width);
+    height: var(--image-height);
+    border-radius: var(--image-border-radius);
+    margin: 0 auto var(--margin);
+    display: block;
+}
+
+.team-member h3 {
+    color: var(--text-color);
+    font-size: 1.2em;
+}
+
+.team-member p {
+    color: var(--text-color);
+}
